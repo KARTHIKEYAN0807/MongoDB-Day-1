@@ -13,8 +13,9 @@ For this document, we assume that the MongoDB collection is named products. If y
 Query:
 
 mongodb
-Copy code
+
 db.products.find({})
+
 Explanation:
 
 This query fetches all documents from the products collection.
@@ -45,6 +46,7 @@ json
 
 
 2. Find the product price which is between 400 to 800
+
 Query:
 
 mongodb
@@ -80,6 +82,7 @@ json
 ]
 
 3. Find the product price which is not between 400 to 600
+
 Query:
 
 mongodb
