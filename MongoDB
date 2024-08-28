@@ -12,8 +12,6 @@ For this document, we assume that the MongoDB collection is named products. If y
 
 Query:
 
-mongodb
-
 db.products.find({})
 
 Explanation:
@@ -49,8 +47,6 @@ json
 
 Query:
 
-mongodb
-
 db.products.find({ product_price: { $gte: 400, $lte: 800 } })
 
 Explanation:
@@ -84,8 +80,6 @@ json
 3. Find the product price which is not between 400 to 600
 
 Query:
-
-mongodb
 
 db.products.find({ product_price: { $not: { $gte: 400, $lte: 600 } } })
 
@@ -121,8 +115,6 @@ json
 
 Query:
 
-mongodb
-
 db.products.find({ product_price: { $gt: 500 } }).limit(4)
 
 Explanation:
@@ -156,8 +148,6 @@ json
 
 Query:
 
-mongodb
-
 db.products.find({}, { product_name: 1, product_material: 1, _id: 0 })
 
 Explanation:
@@ -185,8 +175,6 @@ json
 
 Query:
 
-mongodb
-
 db.products.find({ id: "10" })
 
 Explanation:
@@ -207,8 +195,6 @@ json
 7. Find only the product name and product material
 
 Query:
-
-mongodb
 
 db.products.find({}, { product_name: 1, product_material: 1, _id: 0 })
 
@@ -236,8 +222,6 @@ json
 8. Find all products which contain the value "Soft" in product material
 
 Query:
-
-mongodb
 
 db.products.find({ product_material: "Soft" })
 
@@ -270,8 +254,6 @@ json
 
 Query:
 
-mongodb
-
 db.products.find({ product_color: "indigo", product_price: 492.00 })
 
 Explanation:
@@ -295,8 +277,6 @@ json
 10. Delete the products which product price value is 28
 
 Query:
-
-mongodb
 
 db.products.deleteMany({ product_price: 28.00 })
 
