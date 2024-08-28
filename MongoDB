@@ -4,9 +4,6 @@ Dataset Overview
 
 The dataset consists of product details in a JSON format. Each product has several attributes, including id, product_name, product_price, product_material, and product_color.
 
-Collection Name
-
-For this document, we assume that the MongoDB collection is named products. If your collection has a different name, please replace products with the correct collection name in each query.
 
 1. Find all the information about each product
 
